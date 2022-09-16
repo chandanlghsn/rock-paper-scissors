@@ -4,7 +4,7 @@
 	<groupId>com.mcnz.rps</groupId>
 	<artifactId>roshambo</artifactId>
 	<version>1.0-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 
 	<name>roshambo</name>
 
@@ -34,7 +34,7 @@
 						<path>/</path>
 						<port>8083</port>
 						<!-- name of Tomcat executable jar file -->
-						<finalName>executable.war</finalName>
+						<finalName>executable.jar</finalName>
 					</configuration>
 
 				</plugin>
@@ -55,7 +55,7 @@
 		    <configuration>
 			<repository>${docker.image.prefix}/${project.artifactId}</repository>
 			<buildArgs>
-			    <JAR_FILE>target/${project.build.finalName}.war</JAR_FILE>
+			    <JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
 			</buildArgs>
 		    </configuration>
 		</plugin>
