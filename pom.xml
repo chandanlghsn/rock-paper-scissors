@@ -26,7 +26,7 @@
 		    
 		    	<plugin>
 					<groupId>org.apache.tomcat.maven</groupId>
-					<artifactId>tomcat7-maven-plugin</artifactId>
+					<artifactId>tomcat9-maven-plugin</artifactId>
 					<version>2.1</version>
 
 					<configuration>
@@ -55,7 +55,7 @@
 		    <configuration>
 			<repository>${docker.image.prefix}/${project.artifactId}</repository>
 			<buildArgs>
-			    <JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
+			    <JAR_FILE>target/${project.build.finalName}.war</JAR_FILE>
 			</buildArgs>
 		    </configuration>
 		</plugin>
